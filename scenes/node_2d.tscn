@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bahig5i7ygnah"]
+
+[ext_resource type="Texture2D" uid="uid://lde00lj3gmi1" path="res://asseTs/background/BG.png" id="1_6e84v"]
+
+[sub_resource type="TileSet" id="TileSet_u2n52"]
+
+[node name="Node2D" type="Node2D" unique_id=1257445216]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1266131407]
+position = Vector2(640, 386.5)
+scale = Vector2(0.67, 0.67)
+texture = ExtResource("1_6e84v")
+
+[node name="GROUND" type="TileMapLayer" parent="Sprite2D" unique_id=833260806]
+tile_set = SubResource("TileSet_u2n52")

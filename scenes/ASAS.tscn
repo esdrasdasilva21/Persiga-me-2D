@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://cef65n8nntads"]
+
+[ext_resource type="Texture2D" uid="uid://dv0w3x2udyv35" path="res://asseTs/background/WhatsApp Image 2026-11-09 at 02.48.41.jpeg" id="1_6cdym"]
+[ext_resource type="Texture2D" uid="uid://4wdkvhgx2kao" path="res://asseTs/pai natal/Walk (1).png" id="2_6nb72"]
+[ext_resource type="Texture2D" uid="uid://crfvyybenqydk" path="res://asseTs/pai natal/Run (5).png" id="3_xbntn"]
+[ext_resource type="Texture2D" uid="uid://c8j54aik3ti1t" path="res://asseTs/pai natal/Run (6).png" id="4_q6qww"]
+[ext_resource type="Texture2D" uid="uid://ldmtrkgnn810" path="res://asseTs/pai natal/Run (7).png" id="5_cspih"]
+[ext_resource type="Texture2D" uid="uid://bbqjado5w10gk" path="res://asseTs/pai natal/Run (8).png" id="6_pis8c"]
+[ext_resource type="Texture2D" uid="uid://dxhqbno15eq3s" path="res://asseTs/pai natal/Run (9).png" id="7_ltt23"]
+[ext_resource type="Texture2D" uid="uid://dot5hnoapbp1c" path="res://asseTs/pai natal/Run (10).png" id="8_rdush"]
+[ext_resource type="Texture2D" uid="uid://ci01a5gpdfjpo" path="res://asseTs/pai natal/Run (11).png" id="9_5xc77"]
+[ext_resource type="Texture2D" uid="uid://d3u30yhplgdlo" path="res://asseTs/pai natal/Walk (2).png" id="10_iglpl"]
+[ext_resource type="Texture2D" uid="uid://b5hhvvu8v0kb" path="res://asseTs/pai natal/Run (2).png" id="11_yhi2a"]
+[ext_resource type="Texture2D" uid="uid://dy7lsluxi5ydb" path="res://asseTs/pai natal/Run (3).png" id="12_inx4x"]
+[ext_resource type="Texture2D" uid="uid://btpoij8ls0xej" path="res://asseTs/pai natal/Run (4).png" id="13_0non3"]
+[ext_resource type="Texture2D" uid="uid://b321ognaqgtpd" path="res://asseTs/pai natal/Run (1).png" id="14_pcdbf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qcfbw"]
+size = Vector2(1279, 151)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_015ha"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6nb72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xbntn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_q6qww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cspih")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pis8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ltt23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rdush")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5xc77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_iglpl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_yhi2a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_inx4x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_0non3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_pcdbf")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="MAIN" type="Node2D" unique_id=608972121]
+
+[node name="BACKGROUND" type="Node2D" parent="." unique_id=986083504]
+
+[node name="Sprite2D" type="Sprite2D" parent="BACKGROUND" unique_id=1779729631]
+position = Vector2(639, 373)
+texture = ExtResource("1_6cdym")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="BACKGROUND/Sprite2D" unique_id=2081849550]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BACKGROUND/Sprite2D/StaticBody2D" unique_id=668090539]
+position = Vector2(-2.5, 277.5)
+shape = SubResource("RectangleShape2D_qcfbw")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=897459818]
+position = Vector2(-11, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=277940630]
+debug_color = Color(2.117753e-06, 0.60195976, 0.7002923, 0.42352942)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1322484485]
+sprite_frames = SubResource("SpriteFrames_015ha")
+frame = 8
+frame_progress = 0.74331635

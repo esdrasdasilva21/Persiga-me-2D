@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cq6sd5ttrp0x7"]
+
+[ext_resource type="Texture2D" uid="uid://dv0w3x2udyv35" path="res://asseTs/background/WhatsApp Image 2026-11-09 at 02.48.41.jpeg" id="1_pflvq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qcfbw"]
+size = Vector2(1307, 166)
+
+[node name="Node2D" type="Node2D" unique_id=1257445216]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1266131407]
+position = Vector2(621, 341)
+scale = Vector2(1.0263889, 1.0263889)
+texture = ExtResource("1_pflvq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D" unique_id=385512573]
+position = Vector2(-2.670288e-05, 0.7462983)
+scale = Vector2(1.5547262, 1.5547262)
+
+[node name="GROUPCOLISSION" type="StaticBody2D" parent="." unique_id=351929530]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GROUPCOLISSION" unique_id=2072574587]
+position = Vector2(623.5, 640)
+shape = SubResource("RectangleShape2D_qcfbw")
