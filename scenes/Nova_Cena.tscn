@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://cgtox2ll8vo6p"]
 
+[ext_resource type="Script" uid="uid://bnwdx5clm5hwk" path="res://scenes/coin.gd" id="1_csu84"]
+
 [node name="main" type="Node2D" unique_id=274347820]
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1867760773]
+script = ExtResource("1_csu84")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1045415542]
 
